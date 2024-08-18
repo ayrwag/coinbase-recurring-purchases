@@ -14,7 +14,7 @@ Coinbase retail fees for recurring investments will range you anywhere from 50% 
 
 Making trades through the API reduces that to 0.6% instead.
 
-**Fee with API**
+# Fee with API (2¢)
 
 Server response:
 
