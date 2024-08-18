@@ -3,16 +3,32 @@ A crypto DCA server coded in kotlin & OkHttp3
 ## What is Dollar-Cost-Averaging (DCA)?
 DCA is a way of minimizing risk by spreading your investments.
 
-The server allows you to make small crypto orders on a daily schedule (24-hours apart) 
+This server allows you to make small crypto orders on a daily schedule (24-hours apart) 
 
-Bonus: while saving a lot on swap fees.
+**Bonus:** *while saving a lot on swap fees.*
 ### API Saves over 97.9% on fees (August 2024)
-Typically, Coinbase retail fees for recurring investments will range you anywhere from 50% (on the large end) to 14.2% (on the medium range) of your orders.
+**Normal Retail Fee**
 
-Making trades through the API, reduces that to 0.6% instead.
+Coinbase retail fees for recurring investments will range you anywhere from 50% (on the large end) to 14.2% (on the medium range) of your orders.
+![coinbase retail fee for $1 of litecoin](https://i.gyazo.com/bd8d1ca03a6dcb6b3ce53911517dbe80.png)
 
-Uses your USD balance (free to top up via bank transfers).
-Once USD runs out it will switch to using USDC instead (coming soon).
+Making trades through the API reduces that to 0.6% instead.
+
+**Fee with API**
+
+Server response:
+
+![Coinbase Server Response](https://i.gyazo.com/d4714a091da4a8020bee8bd4d600c1ec.png)
+
+**Actual fee paid:**
+# 2¢
+
+![Final fee paid using the developer api](https://i.gyazo.com/f3a4e97656536f673552b0905cd62c93.png)
+
+# How *'Kotlin Coinbase Recurring Purchases'* works
+It uses your quote asset balance i.e USD (which is free to top up via bank transfers).
+
+And once USD (or quote asset) runs out it will switch quote asset to using USDC instead (coming soon).
 
 ### Uses CDP API
 This application uses CDP API credentials (Coinbase Developer Platform) to make trades on your behalf. Credentials should be placed as a .json file  in the same directory as the .jar file.
