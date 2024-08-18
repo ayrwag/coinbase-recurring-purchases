@@ -25,10 +25,12 @@ Server response:
 
 ![Final fee paid using the developer api](https://i.gyazo.com/f3a4e97656536f673552b0905cd62c93.png)
 
-# How *'Kotlin Coinbase Recurring Purchases'* works
-It uses your quote asset balance i.e USD (which is free to top up via bank transfers).
+# How *'Coinbase Recurring Purchases'* works
+The application uses your designated quote asset i.e USD (which is free to top up via bank transfers) to make transactions.
 
-And once USD (or quote asset) runs out it will switch quote asset to using USDC instead (coming soon).
+And once USD (or quote asset) runs out it will switch the quote asset to USDC instead (coming soon).
+
+(Since USDC earns interest, it's best to spend that last)
 
 ### Uses CDP API
 This application uses CDP API credentials (Coinbase Developer Platform) to make trades on your behalf. Credentials should be placed as a .json file  in the same directory as the .jar file.
