@@ -30,7 +30,7 @@ The application uses your designated quote asset i.e USD (which is free to top u
 
 And once USD (or quote asset) runs out, it will switch the quote asset to USDC instead.
 
-*Since USDC earns interest, it's best to spend that last*
+*(Since USDC earns interest, it's best to spend that last)*
 
 ### Uses CDP API
 This application uses CDP API credentials (Coinbase Developer Platform) to make trades on your behalf. Credentials should be placed as a .json file  in the same directory as the .jar file.
